@@ -42,4 +42,12 @@ module Matrixlpp
       end 
     end
 
+    def run
+      case @name
+        when "suma"
+          resultado = (@Matriz[0]+@Matriz[1]).to_s
+      end
+                  
+    end
+
 end
