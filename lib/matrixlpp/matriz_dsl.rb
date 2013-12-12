@@ -47,7 +47,12 @@ module Matrixlpp
         when "suma"
           resultado = (@Matriz[0]+@Matriz[1]).to_s
       end
-                  
+      
+      if @salida == 1
+        mostrar(resultado)
+      else
+        return resultado
+      end                  
     end
 
 end
