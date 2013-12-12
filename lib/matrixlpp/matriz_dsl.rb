@@ -1,3 +1,7 @@
+require "./lib/matrixlpp/matriz.rb"
+require "./lib/matrixlpp/matriz_dispersa.rb"
+require "./lib/matrixlpp/matriz_densa.rb"
+
 module Matrixlpp
   class MatrixDSL
     #Inicializa los valores a los que se les pase por parametro
@@ -26,5 +30,16 @@ module Matrixlpp
         end               
       end
     end
-    
+
+    def operando(fil1,fil2)
+      n = fil1.size
+      m = fil2.size
+      case @MatrizClass
+        when "densa" 
+          @Matriz << Matrixlpp::Matriz_Densa.new(n,m,[fil1,fil2])
+        when "dispersa" 
+          @Matriz << Matrixlpp::Matriz_Dispersa.new(n,m,[fil1,fil2])
+      end 
+    end
+
 end
