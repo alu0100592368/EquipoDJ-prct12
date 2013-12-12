@@ -55,4 +55,11 @@ module Matrixlpp
       end                  
     end
 
+    def mostrar(res)
+      case @name
+        when "suma"
+          printf "A:\t%s\ + t%s == t%s", @Matriz[0].to_s, @Matriz[1].to_s, res
+      end
+    end
+  end
 end
