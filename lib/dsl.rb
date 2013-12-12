@@ -6,3 +6,7 @@ calculo = <<"CALCULO"
         MatrixDSL.new() do
                 #{calculo}
         end
+CALCULO
+matrixDSL = eval calculo
+
+matrixDSL.run
