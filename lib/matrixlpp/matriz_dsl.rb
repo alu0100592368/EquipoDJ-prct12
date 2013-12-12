@@ -8,5 +8,10 @@ module Matrixlpp
       @Matriz = []
       instance_eval &block
     end
+
+    def operacion(opt)
+      @name = opt
+    end
+    
   end
 end
