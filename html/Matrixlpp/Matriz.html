@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>class Matrixlpp::Matriz - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="../index.html">Home</a>
+    <a href="../table_of_contents.html#classes">Classes</a>
+    <a href="../table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>lib/matrixlpp/matriz.rb
+    <li>lib/matrixlpp/matriz_operaciones.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link">Object
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-c-new">::new</a>
+    
+    <li><a href="#method-i-2A">#*</a>
+    
+    <li><a href="#method-i-2B">#+</a>
+    
+    <li><a href="#method-i-2D">#-</a>
+    
+    <li><a href="#method-i-get">#get</a>
+    
+    <li><a href="#method-i-set">#set</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../Matrixlpp.html">Matrixlpp</a>
+  
+    <li><a href="../Matrixlpp/Fraccion.html">Matrixlpp::Fraccion</a>
+  
+    <li><a href="../Matrixlpp/Matriz.html">Matrixlpp::Matriz</a>
+  
+    <li><a href="../Matrixlpp/Matriz_Densa.html">Matrixlpp::Matriz_Densa</a>
+  
+    <li><a href="../Matrixlpp/Matriz_Dispersa.html">Matrixlpp::Matriz_Dispersa</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class Matrixlpp::Matriz</h1>
+
+  <div id="description" class="description">
+    
+<p>Esta clase contendrá el número de filas y columnas de la matriz.</p>
+
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+    <!-- Attributes -->
+    <section id="attribute-method-details" class="method-section section">
+      <h3 class="section-header">Attributes</h3>
+
+      
+      <div id="attribute-i-M" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">M</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        <p>Número de columnas.</p>
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-N" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">N</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        <p>Número de filas.</p>
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-contenido" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">contenido</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        <p>Vector que contendrá los datos de la matriz.</p>
+        
+        </div>
+      </div>
+      
+    </section><!-- attribute-method-details -->
+    
+
+    <!-- Methods -->
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">(n, m)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Constructor de la matriz. Crea una matriz de tamaño N*<a
+href="Matriz.html#attribute-i-M">#M</a> sin contenido, inicializando sólo
+<a href="Matriz.html#attribute-i-N">#N</a> y <a
+href="Matriz.html#attribute-i-M">#M</a>.</p>
+<ul><li>
+<p><strong>Argumentos</strong>    :</p>
+<ul><li>
+<p><code>n</code>: Número de filas. Debe ser mayor que 0.</p>
+</li><li>
+<p><code>m</code>: Número de columnas. Debe ser mayor que 0.</p>
+</li></ul>
+</li></ul>
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File lib/matrixlpp/matriz.rb, line 17</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">n</span>, <span class="ruby-identifier">m</span>)
+  <span class="ruby-identifier">raise</span> <span class="ruby-constant">ArgumentError</span>, <span class="ruby-string">&#39;Indice no valido&#39;</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">n</span>.<span class="ruby-identifier">is_a?</span> <span class="ruby-constant">Fixnum</span> <span class="ruby-keyword">and</span> <span class="ruby-identifier">n</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span> <span class="ruby-keyword">and</span> <span class="ruby-identifier">m</span>.<span class="ruby-identifier">is_a?</span> <span class="ruby-constant">Fixnum</span> <span class="ruby-keyword">and</span> <span class="ruby-identifier">m</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span>
+
+  <span class="ruby-ivar">@N</span>, <span class="ruby-ivar">@M</span> = <span class="ruby-identifier">n</span>, <span class="ruby-identifier">m</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- new-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- new-method -->
+
+    
+    </section><!-- public-class-method-details -->
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-2A" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">*</span><span
+            class="method-args">(other)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Permite multiplicar un elemento a una matriz.</p>
+          
+
+          
+          <div class="method-source-code" id="2A-source">
+            <pre><span class="ruby-comment"># File lib/matrixlpp/matriz_operaciones.rb, line 54</span>
+<span class="ruby-keyword">def</span> *(<span class="ruby-identifier">other</span>)
+  <span class="ruby-identifier">raise</span> <span class="ruby-constant">ArgumentError</span> , <span class="ruby-string">&#39;Parametro invalido&#39;</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">is_a?</span> <span class="ruby-constant">Numeric</span> <span class="ruby-keyword">or</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">is_a?</span> <span class="ruby-constant">Matriz</span>
+
+  <span class="ruby-keyword">if</span>(<span class="ruby-identifier">other</span>.<span class="ruby-identifier">is_a?</span> <span class="ruby-constant">Numeric</span>)
+    <span class="ruby-identifier">c</span> = <span class="ruby-constant">Matriz_Densa</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@N</span>, <span class="ruby-ivar">@M</span>)
+    
+    (<span class="ruby-ivar">@N</span>).<span class="ruby-identifier">times</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+      (<span class="ruby-ivar">@M</span>).<span class="ruby-identifier">times</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">j</span><span class="ruby-operator">|</span>
+        <span class="ruby-identifier">c</span>.<span class="ruby-identifier">set</span>(<span class="ruby-identifier">i</span>, <span class="ruby-identifier">j</span>, <span class="ruby-identifier">get</span>(<span class="ruby-identifier">i</span>,<span class="ruby-identifier">j</span>)*<span class="ruby-identifier">other</span>)
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">else</span> <span class="ruby-comment"># Matriz * Matriz</span>
+    <span class="ruby-identifier">raise</span> <span class="ruby-constant">ArgumentError</span> , <span class="ruby-string">&#39;Matriz no compatible (A.N == B.M)&#39;</span> <span class="ruby-keyword">unless</span> <span class="ruby-ivar">@M</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">other</span>.<span class="ruby-constant">N</span>
+    <span class="ruby-identifier">c</span> = <span class="ruby-constant">Matriz_Densa</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@N</span>, <span class="ruby-identifier">other</span>.<span class="ruby-constant">M</span>)
+    (<span class="ruby-ivar">@N</span>).<span class="ruby-identifier">times</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+      (<span class="ruby-identifier">other</span>.<span class="ruby-constant">M</span>).<span class="ruby-identifier">times</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">j</span><span class="ruby-operator">|</span>
+        <span class="ruby-identifier">buffer</span> = (<span class="ruby-value">0</span><span class="ruby-operator">...</span><span class="ruby-ivar">@M</span>).<span class="ruby-identifier">inject</span>(<span class="ruby-value">0</span>) { <span class="ruby-operator">|</span><span class="ruby-identifier">acc</span>, <span class="ruby-identifier">k</span><span class="ruby-operator">|</span> <span class="ruby-identifier">get</span>(<span class="ruby-identifier">i</span>, <span class="ruby-identifier">k</span>) * <span class="ruby-identifier">other</span>.<span class="ruby-identifier">get</span>(<span class="ruby-identifier">k</span>,<span class="ruby-identifier">j</span>) <span class="ruby-operator">+</span> <span class="ruby-identifier">acc</span> }
+        <span class="ruby-identifier">c</span>.<span class="ruby-identifier">set</span>(<span class="ruby-identifier">i</span>, <span class="ruby-identifier">j</span>, <span class="ruby-identifier">buffer</span>)
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-keyword">if</span> (<span class="ruby-identifier">c</span>.<span class="ruby-identifier">null_percent</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0.6</span>)
+    <span class="ruby-keyword">return</span> <span class="ruby-constant">Matrixlpp</span><span class="ruby-operator">::</span><span class="ruby-constant">Matriz_Dispersa</span>.<span class="ruby-identifier">copy</span>(<span class="ruby-identifier">c</span>)
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">c</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- 2A-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- 2A-method -->
+
+    
+      <div id="method-i-2B" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">+</span><span
+            class="method-args">(other)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Permite sumar matrices (dispersas o densas) de iguales dimensiones.</p>
+<ul><li>
+<p><strong>Argumentos</strong>    :</p>
+<ul><li>
+<p><code>other</code>: <a href="Matriz.html">Matriz</a> densa o dispersa. Debe
+ser de igual tamaño que la actual.</p>
+</li></ul>
+</li><li>
+<p><strong>Devuelve</strong>    :</p>
+<ul><li>
+<p><a href="Matriz.html">Matriz</a> de tamaño N*<a
+href="Matriz.html#attribute-i-M">#M</a> resultado de la suma de la matriz
+actual con <code>other</code>. Si el porcentaje de valores nulos es mayor
+al 60%, se devuelve una matriz dispersa. Si no, se devuelve una matriz
+densa.</p>
+</li></ul>
+</li></ul>
+          
+
+          
+          <div class="method-source-code" id="2B-source">
+            <pre><span class="ruby-comment"># File lib/matrixlpp/matriz_operaciones.rb, line 13</span>
+<span class="ruby-keyword">def</span> <span class="ruby-operator">+</span>(<span class="ruby-identifier">other</span>)
+  <span class="ruby-identifier">raise</span> <span class="ruby-constant">ArgumentError</span> , <span class="ruby-string">&#39;Tipo invalido&#39;</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">is_a?</span> <span class="ruby-constant">Matriz</span>
+  <span class="ruby-identifier">raise</span> <span class="ruby-constant">ArgumentError</span> , <span class="ruby-string">&#39;Matriz no compatible&#39;</span> <span class="ruby-keyword">unless</span> <span class="ruby-ivar">@N</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">other</span>.<span class="ruby-constant">N</span> <span class="ruby-keyword">and</span> <span class="ruby-ivar">@M</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">other</span>.<span class="ruby-constant">M</span>
+  <span class="ruby-identifier">c</span> = <span class="ruby-constant">Matriz_Densa</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@N</span>, <span class="ruby-ivar">@M</span>)
+  (<span class="ruby-ivar">@N</span>).<span class="ruby-identifier">times</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+    (<span class="ruby-ivar">@M</span>).<span class="ruby-identifier">times</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">j</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">c</span>.<span class="ruby-identifier">set</span>(<span class="ruby-identifier">i</span>, <span class="ruby-identifier">j</span>, <span class="ruby-identifier">get</span>(<span class="ruby-identifier">i</span>,<span class="ruby-identifier">j</span>) <span class="ruby-operator">+</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">get</span>(<span class="ruby-identifier">i</span>,<span class="ruby-identifier">j</span>))
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+  
+  <span class="ruby-keyword">if</span> (<span class="ruby-identifier">c</span>.<span class="ruby-identifier">null_percent</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0.6</span>)
+    <span class="ruby-keyword">return</span> <span class="ruby-constant">Matrixlpp</span><span class="ruby-operator">::</span><span class="ruby-constant">Matriz_Dispersa</span>.<span class="ruby-identifier">copy</span>(<span class="ruby-identifier">c</span>)
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">c</span>
+  <span class="ruby-keyword">end</span> 
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- 2B-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- 2B-method -->
+
+    
+      <div id="method-i-2D" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">-</span><span
+            class="method-args">(other)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Permite restar matrices (dispersas o densas) de iguales dimensiones.</p>
+<ul><li>
+<p><strong>Argumentos</strong>    :</p>
+<ul><li>
+<p><code>other</code>: <a href="Matriz.html">Matriz</a> densa o dispersa. Debe
+ser de igual tamaño que la actual.</p>
+</li></ul>
+</li><li>
+<p><strong>Devuelve</strong>    :</p>
+<ul><li>
+<p><a href="Matriz.html">Matriz</a> de tamaño N*<a
+href="Matriz.html#attribute-i-M">#M</a> resultado de la resta de la matriz
+actual con <code>other</code>. Si el porcentaje de valores nulos es mayor
+al 60%, se devuelve una matriz dispersa. Si no, se devuelve una matriz
+densa.</p>
+</li></ul>
+</li></ul>
+          
+
+          
+          <div class="method-source-code" id="2D-source">
+            <pre><span class="ruby-comment"># File lib/matrixlpp/matriz_operaciones.rb, line 35</span>
+<span class="ruby-keyword">def</span> <span class="ruby-operator">-</span>(<span class="ruby-identifier">other</span>)
+  <span class="ruby-identifier">raise</span> <span class="ruby-constant">ArgumentError</span> , <span class="ruby-string">&#39;Tipo invalido&#39;</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">is_a?</span> <span class="ruby-constant">Matriz</span>
+  <span class="ruby-identifier">raise</span> <span class="ruby-constant">ArgumentError</span> , <span class="ruby-string">&#39;Matriz no compatible&#39;</span> <span class="ruby-keyword">unless</span> <span class="ruby-ivar">@N</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">other</span>.<span class="ruby-constant">N</span> <span class="ruby-keyword">and</span> <span class="ruby-ivar">@M</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">other</span>.<span class="ruby-constant">M</span>
+  <span class="ruby-identifier">c</span> = <span class="ruby-constant">Matriz_Densa</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@N</span>, <span class="ruby-ivar">@M</span>)
+  
+  (<span class="ruby-ivar">@N</span>).<span class="ruby-identifier">times</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+    (<span class="ruby-ivar">@M</span>).<span class="ruby-identifier">times</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">j</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">c</span>.<span class="ruby-identifier">set</span>(<span class="ruby-identifier">i</span>, <span class="ruby-identifier">j</span>, <span class="ruby-identifier">get</span>(<span class="ruby-identifier">i</span>,<span class="ruby-identifier">j</span>) <span class="ruby-operator">-</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">get</span>(<span class="ruby-identifier">i</span>,<span class="ruby-identifier">j</span>))
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+  
+  <span class="ruby-keyword">if</span> (<span class="ruby-identifier">c</span>.<span class="ruby-identifier">null_percent</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0.6</span>)
+    <span class="ruby-keyword">return</span> <span class="ruby-constant">Matrixlpp</span><span class="ruby-operator">::</span><span class="ruby-constant">Matriz_Dispersa</span>.<span class="ruby-identifier">copy</span>(<span class="ruby-identifier">c</span>)
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">c</span>
+  <span class="ruby-keyword">end</span> 
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- 2D-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- 2D-method -->
+
+    
+      <div id="method-i-get" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get</span><span
+            class="method-args">(i, j)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Método que permite acceder a un elemento de la matriz. Devuelve
+<em>nil</em>. Redefinido en clases hijas.</p>
+          
+
+          
+          <div class="method-source-code" id="get-source">
+            <pre><span class="ruby-comment"># File lib/matrixlpp/matriz.rb, line 24</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get</span>(<span class="ruby-identifier">i</span>, <span class="ruby-identifier">j</span>)
+  <span class="ruby-keyword">nil</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get-method -->
+
+    
+      <div id="method-i-set" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">set</span><span
+            class="method-args">(i, j, val)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Método que permite almacenar un elemento en la matriz. Devuelve
+<em>nil</em>. Redefinido en clases hijas.</p>
+          
+
+          
+          <div class="method-source-code" id="set-source">
+            <pre><span class="ruby-comment"># File lib/matrixlpp/matriz.rb, line 28</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">set</span>(<span class="ruby-identifier">i</span>, <span class="ruby-identifier">j</span>, <span class="ruby-identifier">val</span>)
+  <span class="ruby-keyword">nil</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- set-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- set-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.2.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+
