@@ -13,5 +13,18 @@ module Matrixlpp
       @name = opt
     end
     
-  end
+    def opcion(opt)
+      case opt
+        when "densa"  
+          @MatrizClass = "densa"
+        when "dispersa" 
+          @MatrizClass = "dispersa"
+        when "consola"
+          @salida = 1
+        when "matrix"
+          @salida = 0
+        end               
+      end
+    end
+    
 end
