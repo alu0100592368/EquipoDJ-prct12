@@ -25,6 +25,10 @@ task :tc do
         sh "ruby -I. test/tc_matrixlpp.rb"
 end
 
+desc "Ejecucion de la operacion Suma"
+task :suma do
+    	sh "ruby lib/dsl.rb lib/suma.rb"
+end
 
  Rake::RDocTask.new do |rd|
     rd.main = "README.md"
