@@ -1,15 +1,16 @@
+#Clase Matrix DSL 
 class MatrixDSL 
-require "./matriz.rb" #definicion de la clase matriz
+require "./matriz.rb"
 
   attr_accessor :op, :name, :modo, :tipo_op
   
   def initialize(name,&block)
-    self.name=name            #Nombre de la instancia MatrixDSL
-    self.op=[]              #Array de operandos de tipo matriz
-    self.modo = []          #Modo consola o modo fichero
+    self.name=name        
+    self.op=[]             
+    self.modo = []         
     self.tipo_op={}
     @i = 0;
-    instance_eval &block    #devuelve el bloque que se le pasa
+    instance_eval &block  
   end
   
   def to_s
