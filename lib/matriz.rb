@@ -1,7 +1,5 @@
 # coding: utf-8
 # = matriz.rb
-#  Autores:: Hamilton Steven Cubillos García & Marcos Díaz García
-#  Github:: https://github.com/alu0100545630/prct11
 
 # == Construcción de una gema.
 #  -> Se pretende construir una gema que contenga los principales métodos para matrices densas y dispersas siguiendo la filosofía de la programación funcional.
