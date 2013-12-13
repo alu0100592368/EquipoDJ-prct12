@@ -1,6 +1,6 @@
 #Clase Matrix DSL 
 class MatrixDSL 
-require "./matriz.rb"
+require "./lib/matriz.rb"
 
   attr_accessor :op, :name, :modo, :tipo_op
   
