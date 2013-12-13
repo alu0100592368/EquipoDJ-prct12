@@ -14,7 +14,7 @@ Rake::RDocTask.new do |rd|
     rd.rdoc_files.include("README.md", "lib/**/*.rb")
 end
 
-desc "Ejecucion del Dsl"
+desc "Ejecucion del Dsl que hace la operacion de la suma"
 task :dsl do
      sh "ruby lib/dsl_matriz.rb"
 end
