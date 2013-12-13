@@ -51,11 +51,11 @@ require "./matriz.rb"
 end
 
 ejemplo = MatrixDSL.new("Suma") do 
-  option "fichero"
-  option "Diespersa"
+  option "console"
+  option "Dispersa"
 
-  operand [[0,0,0],[0,5,6],[0,0,0]]  
-  operand [[0,0,0],[1,1,1],[0,0,0]]  
+  operand [[0,0,0],[3,2,4],[0,0,0]]  
+  operand [[0,0,0],[5,3,1],[0,0,0]]  
    
 
 end
