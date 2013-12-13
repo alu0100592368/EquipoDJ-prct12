@@ -11,7 +11,7 @@ Descripción de la práctica
 --------------------------
 Esta práctica en equipo consiste en seguir las dependencias de la Gema (Gemnasium), diseñar e implementar un Lenguaje de Dominio Específico (Domain Specific Language - DSL) para la representación de Matrices de prácticas anteriores.  
 
-
+[![Dependency Status](https://gemnasium.com/alu0100592368/EquipoDJ-prct12.png)](https://gemnasium.com/alu0100592368/EquipoDJ-prct12)
 
 ---
 
