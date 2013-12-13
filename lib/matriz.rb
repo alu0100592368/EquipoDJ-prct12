@@ -105,7 +105,7 @@ end
 #   Es la clase base de nuestra aplicación,en ella se definen los principales métodos para operar con matrices(mediante el modulo operatoria).
 #    
 class Matriz
-   require "./racional.rb" #definicion de la clase racional
+   require "./lib/racional.rb" #definicion de la clase racional
    
    include Operatoria
    #atributos de la clase
