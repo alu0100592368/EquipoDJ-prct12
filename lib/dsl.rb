@@ -2,7 +2,7 @@ filename = ARGV.shift
 
 calculo = File.open(filename).read
 calculo = <<"CALCULO"
-        require './lib/matriz_dsl'
+        require './lib/matrixdsl'
         MatrixDSL.new() do
                 #{calculo}
         end
