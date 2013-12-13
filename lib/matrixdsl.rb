@@ -2,9 +2,7 @@ require "./lib/matrixlpp/matriz.rb"
 require "./lib/matrixlpp/matriz_dispersa.rb"
 require "./lib/matrixlpp/matriz_densa.rb"
 
-module Matrixlpp
   class MatrixDSL
-    #Inicializa los valores a los que se les pase por parametro
     def initialize(operation = "", &block)
       @name= operation
       @MatrizClass = ""
@@ -61,5 +59,3 @@ module Matrixlpp
           printf "A:\t%s\ + t%s == t%s", @Matriz[0].to_s, @Matriz[1].to_s, res
       end
     end
-  end
-end
